@@ -11,7 +11,7 @@ class MainApp {
 
     private function run()
     {
-        echo "tarraaa!!";
+        echo "tarraaa!! v2";
         Bot::handle();
     }
 }
