@@ -11,8 +11,11 @@ class MainApp {
 
     private function run()
     {
-        echo "Bot is running on: https://gab00t.herokuapp.com:80</br>";
-        echo "Crafted by <a href='https://luckywirasakti.github.io'>Lucky Wirasakti</a>";
+        echo "<div style='margin-top:350px;'>
+                <center>Bot is running on: https://gab00t.herokuapp.com:80</br>
+                    Crafted by <a href='https://luckywirasakti.github.io'>Lucky Wirasakti</a>
+                </center>
+            </div>";
         Bot::handle();
     }
 }
