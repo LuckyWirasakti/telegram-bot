@@ -7,7 +7,7 @@ use Vendor\Client;
 
 class Bot {
 
-    const CLIENT_URL = "api/v1/message.json";
+    const CLIENT_URL = "https://gab00t.herokuapp.com/api/v1/message.json";
     const BOT_TOKEN = "1254629289:AAGSA0RKTjEl-s8Mks98MfXi7SMPgTxdnfg";
     const API_URL = "https://api.telegram.org/bot";
     
