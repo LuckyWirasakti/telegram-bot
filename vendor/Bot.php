@@ -17,6 +17,7 @@ class Bot {
     {
         $text = self::getText();
         foreach (Client::handle(self::CLIENT_URL) as $pattern){
+            echo $pattern['kata_kunci'];
             if(BoyerMoore::handle($text[1], $pattern['kata_kunci'])) {
                 self::setMessage($pattern['jawaban']);
             }
