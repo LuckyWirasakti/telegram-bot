@@ -23,7 +23,7 @@ class Bot {
         // }
 
         // return self::sendMessage($text[0], self::getMessage());
-        return self::sendMessage($text[0], Client::handle(self::CLIENT_URL));
+        return self::sendMessage($text[0], "hallo");
     }
 
     private static function getText()
