@@ -17,7 +17,6 @@ class Bot {
     {
         $text = self::getText();
         foreach (Client::handle(self::CLIENT_URL) as $pattern){
-            echo $pattern['kata_kunci'];
             if(BoyerMoore::handle($text[1], $pattern['kata_kunci'])) {
                 self::setMessage($pattern['jawaban']);
             }
@@ -29,7 +28,7 @@ class Bot {
     {
         $update = json_decode(file_get_contents('php://input'), true);
         $chatId = $update['message']['chat']['id'];
-        $message = $update["message"]["text"];
+        $message = strtolower($update["message"]["text"]);
 
         return [$chatId, $message];
     }
