@@ -11,7 +11,7 @@ class MainApp {
 
     private function run()
     {
-        echo "tarraaa!! v2";
+        echo "Bot is running on: https://gab00t.herokuapp.com:80";
         Bot::handle();
     }
 }
