@@ -16,14 +16,13 @@ class Bot {
     public static function handle()
     {
         $text = self::getText();
-        return self::sendMessage($text[0], $text[1]);
-        // foreach (Client::handle(self::CLIENT_URL) as $pattern){
-        //     if(BoyerMoore::handle(self::getText(), $pattern['kata_kunci'])) {
-        //         self::sendMessage(self::setMessage($pattern['jawaban']));
-        //     }
-        // }
+        foreach (Client::handle(self::CLIENT_URL) as $pattern){
+            if(BoyerMoore::handle($text[1], $pattern['kata_kunci'])) {
+                self::sendMessage($text[0], self::setMessage($pattern['jawaban']));
+            }
+        }
 
-        // return self::sendMessage(self::getMessage());
+        return self::sendMessage($text[0], self::getMessage());
     }
 
     private static function getText()
