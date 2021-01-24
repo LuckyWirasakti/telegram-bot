@@ -12,7 +12,7 @@ class MainApp {
     private function run()
     {
         echo "<div style='margin-top:350px;'>
-                <center>Bot is running on: https://gab00t.herokuapp.com:80</br></br>
+                <center>Bot is running on: https://vast-forest-76100.herokuapp.com</br></br>
                     Crafted by <a href='https://luckywirasakti.github.io'>Lucky Wirasakti</a>
                 </center>
             </div>";

@@ -7,8 +7,8 @@ use Vendor\Client;
 
 class Bot {
 
-    const CLIENT_URL = "https://gab00t.herokuapp.com/api/v1/message.json";
-    const BOT_TOKEN = "1254629289:AAGSA0RKTjEl-s8Mks98MfXi7SMPgTxdnfg";
+    const CLIENT_URL = "https://vast-forest-76100.herokuapp.com/api/v1/message.json";
+    const BOT_TOKEN = "1398621256:AAHTUEJIkXaQBlJqvs5ARyiOa7pWhLwKPSc";
     const API_URL = "https://api.telegram.org/bot";
     
     private static $message = "Maaf, kami tidak menemukan jawaban yang cocok untuk pertanyaan anda!";
